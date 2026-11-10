@@ -1,0 +1,46 @@
+@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource/instrument-serif/400-italic.css";
+@import "lenis/dist/lenis.css";
+@import "tailwindcss";
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid #1e1b4b;
+  cursor: pointer;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #1e1b4b;
+  border: 4px solid #ffd166;
+  box-shadow: 0 0 0 2px #1e1b4b;
+}
+
+.range::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #1e1b4b;
+  border: 4px solid #ffd166;
+}
+
+.range:focus-visible {
+  outline: 3px solid #ff5a36;
+  outline-offset: 4px;
+}
