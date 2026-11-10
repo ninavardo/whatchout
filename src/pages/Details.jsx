@@ -65,7 +65,7 @@ const Details = () => {
   if (result.error) {
     return (
       <div className="py-32 text-center">
-        <p className="font-['Instrument_Serif',serif] text-4xl italic">Oops, something broke.</p>
+        <p className="text-4xl font-semibold">Oops, something broke.</p>
         <button
           onClick={() => navigate(0)}
           className="mt-6 cursor-pointer rounded-full border-2 border-[#1E1B4B] bg-[#FFD166] px-5 py-2 font-bold"
@@ -161,7 +161,7 @@ const Details = () => {
                 {name}
               </h1>
               {title.tagline && (
-                <p className="mt-3 font-['Instrument_Serif',serif] text-2xl text-[#FFD166] italic md:text-3xl">
+                <p className="mt-3 text-2xl text-[#FFD166] font-semibold md:text-3xl">
                   {title.tagline}
                 </p>
               )}
@@ -211,7 +211,7 @@ const Details = () => {
       <section className="px-5 py-16">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_340px]">
           <div>
-            <p className="mb-4 text-xs font-bold tracking-[0.3em] text-[#FF5A36] uppercase">
+            <p className="mb-4 text-xs font-bold tracking-[0.3em] text-[#06A77D] uppercase">
               The story
             </p>
             <p className="max-w-3xl text-xl leading-relaxed md:text-2xl">
@@ -245,13 +245,13 @@ const Details = () => {
         <section className="px-5 py-16">
           <div className="mx-auto max-w-7xl">
             <SectionTitle kicker="More like this" className="mb-10">
-              If you liked <span className="font-['Instrument_Serif',serif] font-normal italic">this</span>
+              If you liked <span className="text-[#06A77D]">this</span>
             </SectionTitle>
             <MovieGrid movies={similar} />
             <div className="mt-10 text-center">
               <Link
                 to={`/explore?type=${type}`}
-                className="font-['Instrument_Serif',serif] text-2xl italic underline decoration-[#FF5A36] decoration-2 underline-offset-8"
+                className="text-2xl font-semibold underline decoration-[#06A77D] decoration-2 underline-offset-8"
               >
                 Explore more {type === "tv" ? "series" : "movies"}
               </Link>

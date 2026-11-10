@@ -41,7 +41,7 @@ const TopTen = ({ movies }) => {
             </p>
             <h2 className="text-6xl leading-[0.85] font-extrabold tracking-tight md:text-8xl">
               Top 10
-              <span className="block font-['Instrument_Serif',serif] font-normal text-[#FF5A36] italic">
+              <span className="block text-[#06A77D]">
                 everyone's
               </span>
               watching
@@ -87,7 +87,7 @@ const TopTen = ({ movies }) => {
         </motion.div>
 
         <div className="mx-5 mt-12 h-1 overflow-hidden rounded-full bg-[#FFF7E8]/10 md:mx-12">
-          <motion.div style={{ width: barWidth }} className="h-full bg-[#FF5A36]" />
+          <motion.div style={{ width: barWidth }} className="h-full bg-[#06A77D]" />
         </div>
       </div>
     </section>

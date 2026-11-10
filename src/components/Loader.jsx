@@ -11,11 +11,11 @@ const Loader = ({ text = "Looking around..." }) => {
             transition={{ duration: 0.9, repeat: Infinity, repeatDelay: 0.4 }}
             className="flex h-12 w-10 items-center justify-center rounded-full border-[3px] border-[#1E1B4B] bg-[#FFF7E8]"
           >
-            <span className="h-4 w-4 rounded-full border-[3px] border-[#FF5A36] bg-[#1E1B4B]" />
+            <span className="h-4 w-4 rounded-full border-[3px] border-[#06A77D] bg-[#1E1B4B]" />
           </motion.span>
         ))}
       </div>
-      <p className="font-['Instrument_Serif',serif] text-2xl italic">{text}</p>
+      <p className="text-2xl font-semibold">{text}</p>
     </div>
   );
 };

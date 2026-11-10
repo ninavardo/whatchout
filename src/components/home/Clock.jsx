@@ -9,7 +9,7 @@ const Clock = ({ minutes }) => {
   return (
     <svg viewBox="0 0 100 100" className="h-full w-full">
       <circle cx="50" cy="50" r="47" fill="#FFF7E8" stroke="#1E1B4B" strokeWidth="3" />
-      <circle cx="50" cy="50" r="40" fill="none" stroke="#FF5A36" strokeWidth="1.5" strokeDasharray="2 4" />
+      <circle cx="50" cy="50" r="40" fill="none" stroke="#06A77D" strokeWidth="1.5" strokeDasharray="2 4" />
       {ticks.map((_, index) => (
         <line
           key={index}
@@ -40,7 +40,7 @@ const Clock = ({ minutes }) => {
         y1="50"
         x2="50"
         y2="17"
-        stroke="#FF5A36"
+        stroke="#06A77D"
         strokeWidth="3"
         strokeLinecap="round"
         animate={{ rotate: minuteAngle }}

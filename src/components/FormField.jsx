@@ -6,7 +6,7 @@ const FormField = ({ id, label, error, children }) => {
       </label>
       {children}
       {error && (
-        <p className="mt-1.5 text-sm font-semibold text-[#FF5A36]">{error.message}</p>
+        <p className="mt-1.5 text-sm font-semibold text-[#E63946]">{error.message}</p>
       )}
     </div>
   );

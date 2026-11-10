@@ -21,7 +21,7 @@ const Logo = ({ light = false, onClick }) => {
           light ? "text-[#FFF7E8]" : "text-[#1E1B4B]"
         }`}
       >
-        watch<span className="text-[#FF5A36]">out</span>
+        watch<span className="text-[#06A77D]">out</span>
       </span>
     </Link>
   );

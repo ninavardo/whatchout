@@ -27,7 +27,7 @@ const WatchlistButton = ({ movie, small = false }) => {
         aria-label={saved ? "Remove from watchlist" : "Add to watchlist"}
         title={saved ? "Remove from watchlist" : "Add to watchlist"}
         className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-[#1E1B4B] shadow-[3px_3px_0_0_#1E1B4B] transition-colors ${
-          saved ? "bg-[#FF5A36] text-[#FFF7E8]" : "bg-[#FFF7E8] text-[#1E1B4B] hover:bg-[#FFD166]"
+          saved ? "bg-[#06A77D] text-[#FFF7E8]" : "bg-[#FFF7E8] text-[#1E1B4B] hover:bg-[#FFD166]"
         }`}
       >
         {saved ? <Eye size={18} /> : <Plus size={18} />}
@@ -40,7 +40,7 @@ const WatchlistButton = ({ movie, small = false }) => {
       whileTap={{ scale: 0.95 }}
       onClick={handleClick}
       className={`flex cursor-pointer items-center gap-2 rounded-full border-2 border-[#1E1B4B] px-5 py-3 font-bold shadow-[3px_3px_0_0_#1E1B4B] transition-colors ${
-        saved ? "bg-[#FF5A36] text-[#FFF7E8]" : "bg-[#FFD166] text-[#1E1B4B] hover:bg-[#FFF7E8]"
+        saved ? "bg-[#06A77D] text-[#FFF7E8]" : "bg-[#FFD166] text-[#1E1B4B] hover:bg-[#FFF7E8]"
       }`}
     >
       {saved ? <Eye size={20} /> : <Plus size={20} />}

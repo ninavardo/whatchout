@@ -1,5 +1,4 @@
 @import "@fontsource-variable/bricolage-grotesque";
-@import "@fontsource/instrument-serif/400-italic.css";
 @import "lenis/dist/lenis.css";
 @import "tailwindcss";
 
@@ -41,6 +40,6 @@
 }
 
 .range:focus-visible {
-  outline: 3px solid #ff5a36;
+  outline: 3px solid #06A77D;
   outline-offset: 4px;
 }

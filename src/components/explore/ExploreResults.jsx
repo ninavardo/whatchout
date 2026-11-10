@@ -143,7 +143,7 @@ const ExploreResults = ({ type, query }) => {
       </p>
 
       {error && (
-        <p className="rounded-2xl border-2 border-[#FF5A36] bg-[#FF5A36]/10 p-4 font-semibold text-[#FF5A36]">
+        <p className="rounded-2xl border-2 border-[#E63946] bg-[#E63946]/10 p-4 font-semibold text-[#E63946]">
           {error}
         </p>
       )}
@@ -156,7 +156,7 @@ const ExploreResults = ({ type, query }) => {
         !error && (
           <div className="flex flex-col items-center py-20 text-center">
             <Eyes className="h-24 w-auto" />
-            <p className="mt-6 font-['Instrument_Serif',serif] text-4xl italic">
+            <p className="mt-6 text-4xl font-semibold">
               We looked everywhere...
             </p>
             <p className="mt-2 text-[#1E1B4B]/60">

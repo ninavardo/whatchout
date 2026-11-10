@@ -4,7 +4,7 @@ const SectionTitle = ({
   kicker,
   children,
   className = "",
-  kickerColor = "text-[#FF5A36]",
+  kickerColor = "text-[#06A77D]",
 }) => {
   return (
     <div className={className}>

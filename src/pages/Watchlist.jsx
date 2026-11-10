@@ -39,12 +39,12 @@ const Watchlist = () => {
   return (
     <div className="px-5 pt-10 pb-10 md:pt-16">
       <div className="mx-auto max-w-7xl">
-        <p className="font-['Instrument_Serif',serif] text-3xl italic md:text-4xl">
+        <p className="text-3xl font-semibold md:text-4xl">
           Hey {user.firstName || user.username},
         </p>
         <h1 className="mt-2 text-6xl leading-[0.85] font-extrabold tracking-tighter md:text-8xl">
           you're keeping an eye on{" "}
-          <span className="text-[#FF5A36]">{watchlist.length}</span>{" "}
+          <span className="text-[#06A77D]">{watchlist.length}</span>{" "}
           {watchlist.length === 1 ? "title" : "titles"}.
         </h1>
 
@@ -62,7 +62,7 @@ const Watchlist = () => {
                 {activeTab === tab.id && (
                   <motion.span
                     layoutId="watchlistTab"
-                    className="absolute inset-x-0 bottom-0 h-1 rounded-full bg-[#FF5A36]"
+                    className="absolute inset-x-0 bottom-0 h-1 rounded-full bg-[#06A77D]"
                   />
                 )}
               </button>
@@ -111,10 +111,10 @@ const Watchlist = () => {
                   className="w-16 rounded-xl border-2 border-[#FFD166]"
                 />
                 <div className="flex-1">
-                  <p className="font-['Instrument_Serif',serif] text-lg text-[#FFD166] italic">Tonight you watch...</p>
+                  <p className="text-lg text-[#FFD166] font-semibold">Tonight you watch...</p>
                   <Link
                     to={`/title/${tonightPick.type}/${tonightPick.id}`}
-                    className="text-2xl font-extrabold hover:text-[#FF5A36] md:text-3xl"
+                    className="text-2xl font-extrabold hover:text-[#06A77D] md:text-3xl"
                   >
                     {tonightPick.title}
                   </Link>
@@ -134,7 +134,7 @@ const Watchlist = () => {
         {visible.length === 0 ? (
           <div className="flex flex-col items-center py-24 text-center">
             <Eyes className="h-28 w-auto" closed={activeTab === "seen"} />
-            <p className="mt-6 font-['Instrument_Serif',serif] text-4xl italic">
+            <p className="mt-6 text-4xl font-semibold">
               {activeTab === "toWatch"
                 ? "Nothing here yet."
                 : "You haven't watched anything yet."}
@@ -146,7 +146,7 @@ const Watchlist = () => {
             </p>
             <Link
               to="/explore"
-              className="mt-6 rounded-full border-2 border-[#1E1B4B] bg-[#FF5A36] px-6 py-3 font-bold text-[#FFF7E8] shadow-[3px_3px_0_0_#1E1B4B]"
+              className="mt-6 rounded-full border-2 border-[#1E1B4B] bg-[#06A77D] px-6 py-3 font-bold text-[#FFF7E8] shadow-[3px_3px_0_0_#1E1B4B]"
             >
               Find something
             </Link>
@@ -179,7 +179,7 @@ const Watchlist = () => {
                     <div>
                       <Link
                         to={`/title/${item.type}/${item.id}`}
-                        className="line-clamp-2 text-xl leading-tight font-extrabold hover:text-[#FF5A36]"
+                        className="line-clamp-2 text-xl leading-tight font-extrabold hover:text-[#06A77D]"
                       >
                         {item.title}
                       </Link>
@@ -187,7 +187,7 @@ const Watchlist = () => {
                         {item.type === "tv" ? "Series" : "Movie"} · {item.year}
                         {item.rating > 0 && (
                           <span className="flex items-center gap-1 font-bold text-[#1E1B4B]">
-                            <Star size={12} fill="currentColor" className="text-[#FF5A36]" />
+                            <Star size={12} fill="currentColor" className="text-[#06A77D]" />
                             {item.rating.toFixed(1)}
                           </span>
                         )}
@@ -206,7 +206,7 @@ const Watchlist = () => {
                       <button
                         onClick={() => removeFromWatchlist(item)}
                         aria-label={`Remove ${item.title}`}
-                        className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-2 border-[#1E1B4B] transition hover:bg-[#FF5A36] hover:text-[#FFF7E8]"
+                        className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-2 border-[#1E1B4B] transition hover:bg-[#06A77D] hover:text-[#FFF7E8]"
                       >
                         <Trash2 size={15} />
                       </button>

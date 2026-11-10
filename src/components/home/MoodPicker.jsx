@@ -72,7 +72,7 @@ const MoodPicker = () => {
           <SectionTitle kicker="Mood board">
             What are you
             <br />
-            in the <span className="text-[#FF5A36]">mood</span> for?
+            in the <span className="text-[#06A77D]">mood</span> for?
           </SectionTitle>
           <button
             onClick={shuffle}
@@ -124,7 +124,7 @@ const MoodPicker = () => {
         <div className="mt-10 text-center">
           <Link
             to="/explore"
-            className="font-['Instrument_Serif',serif] text-2xl italic underline decoration-[#FF5A36] decoration-2 underline-offset-8 hover:text-[#FF5A36]"
+            className="text-2xl font-semibold underline decoration-[#06A77D] decoration-2 underline-offset-8 hover:text-[#06A77D]"
           >
             Want to dig deeper? Go to explore
           </Link>

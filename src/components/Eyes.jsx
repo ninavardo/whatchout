@@ -74,7 +74,7 @@ const Eyes = ({ className = "", closed = false, surprised = false }) => {
             />
             <motion.g style={{ x: pupilX, y: pupilY }}>
               <g transform={`translate(${cx} 42)`}>
-                <circle r="13" fill="#FF5A36" />
+                <circle r="13" fill="#06A77D" />
                 <circle r="9" fill="#1E1B4B" />
                 <line y1="0" y2="-6" stroke="#FFD166" strokeWidth="2" strokeLinecap="round">
                   <animateTransform

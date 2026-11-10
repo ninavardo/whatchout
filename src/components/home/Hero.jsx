@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between text-xs font-bold tracking-[0.25em] uppercase">
           <span className="flex items-center gap-2">
-            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#FF5A36]" />
+            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#06A77D]" />
             Live from TMDB
           </span>
           <span className="hidden sm:block">Movies · Series · Tonight</span>
@@ -95,7 +95,7 @@ const Hero = () => {
               custom={2}
               className="block"
             >
-              out<span className="text-[#FF5A36]">.</span>
+              out<span className="text-[#06A77D]">.</span>
             </motion.span>
           </span>
         </motion.h1>
@@ -106,7 +106,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            <p className="max-w-lg font-['Instrument_Serif',serif] text-3xl leading-tight italic md:text-4xl">
+            <p className="max-w-lg text-2xl leading-snug font-semibold tracking-tight md:text-3xl">
               Don't know what to watch tonight? We'll keep an eye out for you.
             </p>
 
@@ -127,7 +127,7 @@ const Hero = () => {
               <button
                 type="submit"
                 aria-label="Search"
-                className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full bg-[#FF5A36] text-[#FFF7E8] transition hover:rotate-[-20deg]"
+                className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full bg-[#06A77D] text-[#FFF7E8] transition hover:rotate-[-20deg]"
               >
                 <ArrowRight size={20} />
               </button>

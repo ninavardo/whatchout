@@ -54,7 +54,7 @@ const PosterMarquee = ({ movies }) => {
                   height="278"
                   className="aspect-[2/3] w-full object-cover transition duration-500 group-hover:scale-110 group-hover:rotate-2"
                 />
-                <span className="absolute inset-x-0 bottom-0 translate-y-full bg-[#FF5A36] p-2 text-xs font-bold text-[#FFF7E8] transition group-hover:translate-y-0">
+                <span className="absolute inset-x-0 bottom-0 translate-y-full bg-[#06A77D] p-2 text-xs font-bold text-[#FFF7E8] transition group-hover:translate-y-0">
                   {movie.title}
                 </span>
               </Link>

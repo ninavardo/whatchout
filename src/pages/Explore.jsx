@@ -38,14 +38,14 @@ const Explore = () => {
           <h1 className="text-7xl leading-[0.85] font-extrabold tracking-tighter md:text-9xl">
             {query ? (
               <>
-                <span className="block font-['Instrument_Serif',serif] text-4xl font-normal tracking-normal italic md:text-5xl">
+                <span className="block text-4xl tracking-normal md:text-5xl">
                   results for
                 </span>
-                <span className="text-[#FF5A36]">"{query}"</span>
+                <span className="text-[#06A77D]">"{query}"</span>
               </>
             ) : (
               <>
-                Explore<span className="text-[#FF5A36]">.</span>
+                Explore<span className="text-[#06A77D]">.</span>
               </>
             )}
           </h1>
@@ -98,7 +98,7 @@ const Explore = () => {
           )}
           <button
             type="submit"
-            className="shrink-0 cursor-pointer rounded-full bg-[#FF5A36] px-6 py-2.5 font-bold text-[#FFF7E8] transition hover:bg-[#1E1B4B]"
+            className="shrink-0 cursor-pointer rounded-full bg-[#06A77D] px-6 py-2.5 font-bold text-[#FFF7E8] transition hover:bg-[#1E1B4B]"
           >
             Search
           </button>

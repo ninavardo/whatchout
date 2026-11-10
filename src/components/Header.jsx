@@ -65,7 +65,7 @@ const Header = () => {
               >
                 {link.label}
                 {link.to === "/watchlist" && toWatchCount > 0 && (
-                  <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-[#FF5A36] px-1 text-xs text-[#FFF7E8]">
+                  <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-[#06A77D] px-1 text-xs text-[#FFF7E8]">
                     {toWatchCount}
                   </span>
                 )}
@@ -102,7 +102,7 @@ const Header = () => {
                 </Link>
                 <Link
                   to="/register"
-                  className="rounded-full border-2 border-[#1E1B4B] bg-[#FF5A36] px-4 py-1.5 text-sm font-bold text-[#FFF7E8] shadow-[3px_3px_0_0_#1E1B4B] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
+                  className="rounded-full border-2 border-[#1E1B4B] bg-[#06A77D] px-4 py-1.5 text-sm font-bold text-[#FFF7E8] shadow-[3px_3px_0_0_#1E1B4B] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
                 >
                   Join free
                 </Link>
@@ -150,11 +150,11 @@ const Header = () => {
                     onClick={closeMenu}
                     className={({ isActive }) =>
                       `flex items-baseline gap-3 text-6xl font-extrabold tracking-tight ${
-                        isActive ? "text-[#FF5A36]" : "text-[#FFF7E8]"
+                        isActive ? "text-[#06A77D]" : "text-[#FFF7E8]"
                       }`
                     }
                   >
-                    <span className="font-['Instrument_Serif',serif] text-xl font-normal text-[#FFD166] italic">
+                    <span className="text-xl text-[#FFD166]">
                       0{index + 1}
                     </span>
                     {link.label}
@@ -192,7 +192,7 @@ const Header = () => {
                   <Link
                     to="/register"
                     onClick={closeMenu}
-                    className="rounded-full bg-[#FF5A36] py-3 text-center font-bold"
+                    className="rounded-full bg-[#06A77D] py-3 text-center font-bold"
                   >
                     Join free
                   </Link>

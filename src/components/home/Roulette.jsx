@@ -51,7 +51,7 @@ const Roulette = () => {
 
   return (
     <section className="px-5 py-16 md:py-24">
-      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-[#FF5A36] p-6 text-[#FFF7E8] md:p-14">
+      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] bg-[#06A77D] p-6 text-[#FFF7E8] md:p-14">
         <div className="pointer-events-none absolute -top-20 -right-20 h-72 w-72 rounded-full border-[40px] border-[#FFD166]/30" />
         <div className="relative grid items-center gap-10 md:grid-cols-2">
           <div>
@@ -60,7 +60,7 @@ const Roulette = () => {
             </p>
             <h2 className="text-5xl leading-[0.9] font-extrabold tracking-tight md:text-7xl">
               Still can't decide?
-              <span className="block font-['Instrument_Serif',serif] font-normal text-[#1E1B4B] italic">
+              <span className="block text-[#1E1B4B]">
                 Let luck pick.
               </span>
             </h2>
@@ -113,7 +113,7 @@ const Roulette = () => {
                   <motion.div
                     key="empty"
                     exit={{ rotateY: 90, opacity: 0 }}
-                    className="flex aspect-[2/3] items-center justify-center rounded-3xl border-2 border-dashed border-[#FFF7E8]/70 text-center font-['Instrument_Serif',serif] text-3xl italic"
+                    className="flex aspect-[2/3] items-center justify-center rounded-3xl border-2 border-dashed border-[#FFF7E8]/70 text-center text-3xl font-semibold"
                   >
                     ?
                   </motion.div>
@@ -133,7 +133,7 @@ const Roulette = () => {
             >
               <div>
                 <p className="flex items-center gap-2 text-sm font-bold">
-                  <Star size={14} fill="currentColor" className="text-[#FF5A36]" />
+                  <Star size={14} fill="currentColor" className="text-[#06A77D]" />
                   {pick.rating.toFixed(1)} · {pick.year}
                 </p>
                 <h3 className="text-3xl font-extrabold">{pick.title}</h3>
@@ -143,7 +143,7 @@ const Roulette = () => {
               </div>
               <Link
                 to={`/title/movie/${pick.id}`}
-                className="flex shrink-0 items-center gap-2 rounded-full bg-[#1E1B4B] px-5 py-3 font-bold text-[#FFF7E8] transition hover:bg-[#FF5A36]"
+                className="flex shrink-0 items-center gap-2 rounded-full bg-[#1E1B4B] px-5 py-3 font-bold text-[#FFF7E8] transition hover:bg-[#06A77D]"
               >
                 See the movie
                 <ArrowRight size={18} />

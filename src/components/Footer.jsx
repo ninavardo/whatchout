@@ -15,10 +15,10 @@ const Footer = () => {
     <footer ref={ref} className="relative mt-24 overflow-hidden bg-[#1E1B4B] text-[#FFF7E8]">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 pt-16 pb-10 md:grid-cols-3">
         <div>
-          <p className="font-['Instrument_Serif',serif] text-4xl leading-tight italic">
+          <p className="text-4xl leading-tight font-semibold">
             Less scrolling,
             <br />
-            more <span className="text-[#FF5A36]">watching.</span>
+            more <span className="text-[#06A77D]">watching.</span>
           </p>
           <p className="mt-4 max-w-xs text-sm text-[#FFF7E8]/60">
             watchout helps you find something good to watch tonight, by mood,
@@ -30,16 +30,16 @@ const Footer = () => {
           <p className="mb-2 text-xs tracking-[0.3em] text-[#FFD166] uppercase">
             Pages
           </p>
-          <Link to="/" className="w-fit hover:text-[#FF5A36]">
+          <Link to="/" className="w-fit hover:text-[#06A77D]">
             Home
           </Link>
-          <Link to="/explore" className="w-fit hover:text-[#FF5A36]">
+          <Link to="/explore" className="w-fit hover:text-[#06A77D]">
             Explore
           </Link>
-          <Link to="/watchlist" className="w-fit hover:text-[#FF5A36]">
+          <Link to="/watchlist" className="w-fit hover:text-[#06A77D]">
             My watchlist
           </Link>
-          <Link to="/register" className="w-fit hover:text-[#FF5A36]">
+          <Link to="/register" className="w-fit hover:text-[#06A77D]">
             Create account
           </Link>
         </nav>
@@ -77,7 +77,7 @@ const Footer = () => {
         aria-hidden="true"
         className="text-[24vw] leading-[0.8] font-extrabold tracking-tighter whitespace-nowrap text-[#FFF7E8]/10 select-none"
       >
-        watch<span className="text-[#FF5A36]/40">out</span>
+        watch<span className="text-[#06A77D]/40">out</span>
       </motion.p>
 
       <div className="border-t border-[#FFF7E8]/10">

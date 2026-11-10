@@ -82,7 +82,7 @@ const Register = () => {
       <h2 className="text-3xl font-extrabold">Create account</h2>
       <p className="mt-1 text-[#1E1B4B]/60">
         Already have one?{" "}
-        <Link to="/login" className="font-bold text-[#FF5A36] underline underline-offset-4">
+        <Link to="/login" className="font-bold text-[#06A77D] underline underline-offset-4">
           Log in
         </Link>
       </p>
@@ -161,7 +161,7 @@ const Register = () => {
             <input
               {...register("terms")}
               type="checkbox"
-              className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-[#FF5A36]"
+              className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-[#06A77D]"
             />
             <span>
               I promise to actually watch the movies I add, not just collect
@@ -169,12 +169,12 @@ const Register = () => {
             </span>
           </label>
           {errors.terms && (
-            <p className="mt-1.5 text-sm font-semibold text-[#FF5A36]">{errors.terms.message}</p>
+            <p className="mt-1.5 text-sm font-semibold text-[#E63946]">{errors.terms.message}</p>
           )}
         </div>
 
         {serverError && (
-          <p className="rounded-2xl bg-[#FF5A36]/10 p-3 text-sm font-semibold text-[#FF5A36]">
+          <p className="rounded-2xl bg-[#E63946]/10 p-3 text-sm font-semibold text-[#E63946]">
             {serverError}
           </p>
         )}
@@ -182,7 +182,7 @@ const Register = () => {
         <button
           type="submit"
           disabled={!isValid || isSubmitting}
-          className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-full border-2 border-[#1E1B4B] bg-[#FF5A36] py-3.5 text-lg font-extrabold text-[#FFF7E8] shadow-[3px_3px_0_0_#1E1B4B] transition enabled:hover:translate-x-0.5 enabled:hover:translate-y-0.5 enabled:hover:shadow-none disabled:cursor-not-allowed disabled:bg-[#1E1B4B]/30"
+          className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-full border-2 border-[#1E1B4B] bg-[#06A77D] py-3.5 text-lg font-extrabold text-[#FFF7E8] shadow-[3px_3px_0_0_#1E1B4B] transition enabled:hover:translate-x-0.5 enabled:hover:translate-y-0.5 enabled:hover:shadow-none disabled:cursor-not-allowed disabled:bg-[#1E1B4B]/30"
         >
           {isSubmitting && <Loader2 size={20} className="animate-spin" />}
           {isSubmitting ? "Creating..." : "Create account"}

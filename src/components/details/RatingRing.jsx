@@ -13,7 +13,7 @@ const RatingRing = ({ rating, votes }) => {
             cy="30"
             r="25"
             fill="none"
-            stroke={value >= 70 ? "#FFD166" : "#FF5A36"}
+            stroke={value >= 70 ? "#FFD166" : "#06A77D"}
             strokeWidth="6"
             strokeLinecap="round"
             initial={{ pathLength: 0 }}

@@ -53,8 +53,7 @@ const RuntimePicker = () => {
         <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
           <div>
             <SectionTitle kicker="The time machine" kickerColor="text-[#1E1B4B]">
-              How much time do you{" "}
-              <span className="font-['Instrument_Serif',serif] font-normal italic">have?</span>
+              How much time do you have?
             </SectionTitle>
             <p className="mt-5 max-w-md text-[#1E1B4B]/70">
               Move the slider and we show movies that will end before you fall
@@ -88,7 +87,7 @@ const RuntimePicker = () => {
               onChange={handleChange}
               className="range mt-8"
               style={{
-                background: `linear-gradient(to right, #FF5A36 ${fill}%, #FFF7E8 ${fill}%)`,
+                background: `linear-gradient(to right, #06A77D ${fill}%, #FFF7E8 ${fill}%)`,
               }}
             />
             <div className="mt-2 flex justify-between text-xs font-bold">
@@ -108,7 +107,7 @@ const RuntimePicker = () => {
                 ))}
               </div>
             ) : (
-              <p className="py-20 text-center font-['Instrument_Serif',serif] text-3xl italic">
+              <p className="py-20 text-center text-3xl font-semibold">
                 Nothing fits in {formatRuntime(minutes)}. Try a bit more time.
               </p>
             )}
