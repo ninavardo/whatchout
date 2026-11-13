@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router";
+import { Analytics } from "@vercel/analytics/react";
 import { AuthProvider } from "./context/AuthProvider";
 import { WatchlistProvider } from "./context/WatchlistProvider";
 import MainLayout from "./layouts/MainLayout";
@@ -35,6 +36,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
+        <Analytics />
       </WatchlistProvider>
     </AuthProvider>
   );
